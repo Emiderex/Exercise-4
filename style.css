@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: poppins, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: poppins, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 main {
@@ -12,7 +12,7 @@ main {
   height: 100vh;
 }
 
-.form_left{
+.form_left {
   max-width: 500px;
   width: 100%;
   padding: 20px;
@@ -31,11 +31,101 @@ main {
 
 .item p {
   font-size: 14px;
-  color: #666;
   margin-bottom: 20px;
   font-weight: 300;
 }
 
-.form_right{
+.form_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.form_item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 500px;
+}
+
+.form_item-group {
+  flex: 1 1 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_item-group-pword {
+  flex: 1 1 100%;
+}
+
+.form_item-group label {
+  font-size: 13px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.form_item-group input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form_item-group input:focus, select:focus {
+  border-color: #86817a;
+  outline: none;
+}
+
+.form_right button {
+  padding: 10px 20px;
+  background-color: #86817a;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-size: 13px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form_item p{
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.form_item a {
+  color: #8a8279;
+}
+
+/* Placholder Edit */
+select {
+  color: #86817a;
+}
+
+select:focus {
+  color: #000000;
+}
+
+
+/* Responsive */
+@media (max-width: 980px) {
+ main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .form_left {
+    max-width: 100%;
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+  }
+  .item img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }

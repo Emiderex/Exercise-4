@@ -9,7 +9,11 @@
   <body>
     <main>
       <section class="item form_left">
-        <img src="./assets/4888f534-79dc-49e1-8cf6-b89a4c39b47c.jpeg" alt="" srcset="" />
+        <img
+          src="./assets/4888f534-79dc-49e1-8cf6-b89a4c39b47c.jpeg"
+          alt=""
+          srcset=""
+        />
         <h2>For Individuals</h2>
         <p>
           Start benefiting from the wellness experience. For companies looking
@@ -19,6 +23,7 @@
 
       <section class="item form_right">
         <form action="" class="form_item">
+          
           <div class="form_item-group">
             <label for="firstname">First Name</label>
             <input type="text" name="firstname" id="" placeholder="Tolu" />
@@ -41,23 +46,19 @@
 
           <div class="form_item-group">
             <label for="birth">Date of birth</label>
-            <input type="date" name="bith" id="" placeholder="Select here" />
+            <input type="date" name="bith" id="date" />
+            <span class="form_icon form_icon-calendar"></span>
           </div>
 
           <div class="form_item-group">
             <label for="weight">Weight(KG)</label>
-            <input
-              type="number"
-              name="weight"
-              id=""
-              placeholder="Enter Weight"
-            />
+            <input type="text" name="weight" id="" placeholder="Enter Weight" />
           </div>
 
           <div class="form_item-group">
             <label for="height">Height (CM)</label>
             <input
-              type="number"
+              type="text"
               name="height"
               id=""
               placeholder="Enter height here.."
@@ -65,7 +66,7 @@
           </div>
 
           <div class="form_item-group">
-            <label for="Activity Level"></label>
+            <label for="Activity Level">Activity Level</label>
             <select name="" id="">
               <option value="" disabled selected>Select here</option>
               <option value="Male">Sedentary</option>
@@ -75,19 +76,20 @@
             </select>
           </div>
 
-          <div class="form-item_group">
+          <div class="form_item-group form_item-group-pword">
             <label for="pword">Password</label>
             <input type="password" name="pword" id="" />
-            <span class="form_icon"></span>
+            <span class="form_icon form_icon-eye"></span>
           </div>
-          
+
           <button type="submit" class="form_button">Register</button>
 
           <p>
-            Ву clicking Register, vou agree to our
+            By clicking Register, you agree to our
             <a href="#">Terms of Use</a> and our
             <a href="#">Privacy Policy</a>
           </p>
+       
         </form>
       </section>
     </main>
