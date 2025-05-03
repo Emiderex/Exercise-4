@@ -47,7 +47,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .form_item-group {
@@ -76,6 +76,19 @@ main {
 .form_item-group input:focus, select:focus {
   border-color: #86817a;
   outline: none;
+}
+
+.form_item-icon {
+  position: relative;
+}
+
+.fa-regular {
+  position: absolute;
+  top: 65%;
+  right: 0.8rem;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
 }
 
 .form_right button {

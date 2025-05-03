@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e17253bf82.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
@@ -23,7 +27,6 @@
 
       <section class="item form_right">
         <form action="" class="form_item">
-          
           <div class="form_item-group">
             <label for="firstname">First Name</label>
             <input type="text" name="firstname" id="" placeholder="Tolu" />
@@ -44,10 +47,10 @@
             </select>
           </div>
 
-          <div class="form_item-group">
+          <div class="form_item-group form_item-icon">
             <label for="birth">Date of birth</label>
-            <input type="date" name="bith" id="date" />
-            <span class="form_icon form_icon-calendar"></span>
+            <i class="fa-regular fa-calendar"></i>
+            <input type="text" name="bith" id="date" placeholder="Select here" />
           </div>
 
           <div class="form_item-group">
@@ -76,8 +79,9 @@
             </select>
           </div>
 
-          <div class="form_item-group form_item-group-pword">
+          <div class="form_item-group form_item-group-pword form_item-icon">
             <label for="pword">Password</label>
+            <i class="fa-regular fa-eye"></i>
             <input type="password" name="pword" id="" />
             <span class="form_icon form_icon-eye"></span>
           </div>
@@ -89,7 +93,6 @@
             <a href="#">Terms of Use</a> and our
             <a href="#">Privacy Policy</a>
           </p>
-       
         </form>
       </section>
     </main>
